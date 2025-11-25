@@ -344,8 +344,9 @@
         style="width: 100%; height: auto;">
       <!-- TODO: Replace with your video description -->
       <h2 class="subtitle has-text-centered">
-        <b>Overview of MergeVLA architecture.</b> (1) To address destructive LoRA parameter interference in finetuned VLM, task masks are applied to all merged LoRA modules to selectively activate the merged parameters contributing to task-relevant responses while suppressing those that mislead other tasks. (2) To solve the incompatibility of action experts, the architecture is redesigned to contain only cross-attention blocks and use $\mathrm{sigmoid}$ gate to preserve and rely on robust VLM features. Most blocks then can be merged except deeper blocks named \textbf{expert head} are left unmerged due to their task specification.
-(3) To address the setting where the task identity is unknown at inference time, a training-free test-time task router is adopted to dynamically select task-specified components by computing task relevance from VLM hidden states in the value-based subspace of the merged action expert.
+        <b>Overview of MergeVLA architecture.</b> 
+        <!-- (1) To address destructive LoRA parameter interference in finetuned VLM, task masks are applied to all merged LoRA modules to selectively activate the merged parameters contributing to task-relevant responses while suppressing those that mislead other tasks. (2) To solve the incompatibility of action experts, the architecture is redesigned to contain only cross-attention blocks and use $\mathrm{sigmoid}$ gate to preserve and rely on robust VLM features. Most blocks then can be merged except deeper blocks named \textbf{expert head} are left unmerged due to their task specification.
+(3) To address the setting where the task identity is unknown at inference time, a training-free test-time task router is adopted to dynamically select task-specified components by computing task relevance from VLM hidden states in the value-based subspace of the merged action expert. -->
       </h2>
     </div>
   </div>
